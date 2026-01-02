@@ -46,7 +46,7 @@ class NetworkDataExtract():
         except  Exception as e:
             raise NetworkSecurityException(e,sys)
 if __name__=="__main__":
-    FILE_PATH = r"NETWORK_DATA/dataset_phishing.csv"       
+    FILE_PATH = r"NETWORK_DATA\phisingData.csv"       
     DATABASE = "NAITIK"
     COLLECTION = "NetworkData"
 

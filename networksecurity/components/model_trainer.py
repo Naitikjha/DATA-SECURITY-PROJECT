@@ -8,9 +8,10 @@ from networksecurity.entity.artifact_entity import DataTransformationArtifact,Mo
 from networksecurity.entity.config_entity import ModelTrainerConfig
 
 import mlflow
+import dagshub
+dagshub.init(repo_owner='naitikjha1845', repo_name='DATA-SECURITY-PROJECT', mlflow=True)
 
-mlflow.set_tracking_uri("http://localhost:5000")
-mlflow.set_experiment("NetworkSecurity")
+
 
 
 from networksecurity.utils.ml_utils.model.estimator import NetworkModel
